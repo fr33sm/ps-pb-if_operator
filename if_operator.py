@@ -24,7 +24,7 @@ tourists = [{'user': users[0], 'city': cities[2]},
 city = ''
 while city not in cities:
     print(f'Доступны города: {cities}')
-    city = input('Введите город: ').capitalize()
+    city = input('Введите город: ').strip().capitalize()
 
 
 
