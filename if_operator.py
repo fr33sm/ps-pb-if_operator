@@ -36,7 +36,7 @@ while city not in cities:
 # Требования:
 # При сравнении нужно использовать только индексы списков и ключи словарей. Так сравнивать нельзя: if city == 'Париж';
 # Регистр не должен влиять на результаты программы т.е. 'Париж' = 'ПаРиж' = 'париЖ'.
-for i in range(0, len(tourists)):
+for i in range(len(tourists)):
     if city in tourists[i]["city"]:
         print(f'Турист {tourists[i]["user"]["name"]} возраст {tourists[i]["user"]["age"]}. Посетил город {tourists[i]["city"]}')
 
